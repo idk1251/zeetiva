@@ -86,6 +86,23 @@
       <p>Thank you for your support! ❤️</p>
     </footer>
   </div>
+
+  <!-- Info Button -->
+  <button class="info-button" onclick="openPopup()">ℹ️</button>
+
+  <!-- Popup -->
+  <div class="popup" id="info-popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">❌</span>
+      <h2>Site Information</h2>
+      <p>This site was built by <strong>zirjagor</strong>.</p>
+      <p><strong>Zirjagor's Ethereum (ETH):</strong> 0x6A989DC790006491A8596f7679C74BB0C16bBAA0</p>
+      <p><strong>Zirjagor's Litecoin (LTC):</strong> ltc1qe7v7rz0akra8fuquadg6luaan3per6jwhx58x4ekpylmv37ny0vq0stcdm</p>
+      <button onclick="copyAddress('eth-address-popup')">Copy ETH Address</button>
+      <button onclick="copyAddress('ltc-address-popup')">Copy LTC Address</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
