@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(20, 20, 20, 0.95);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Header Styles */
+.header h1 {
+  font-size: 1.8rem;
+  color: #58a6ff;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 0.9rem;
+  color: #c9d1d9;
+  margin-bottom: 15px;
+}
+
+/* Video Section */
+.video-section {
+  margin-bottom: 15px;
+}
+
+.trump-video {
+  width: 90%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Donation Goal Styles */
+.goal-section {
+  margin-bottom: 15px;
+}
+
+.goal-section h2 {
+  font-size: 1.2rem;
+  color: #58a6ff;
+}
+
+.progress-container {
+  margin: 0 auto;
+}
+
+.progress-bar {
+  background: #cb3234;
+  height: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  background: #2ea043;
+  height: 100%;
+  width: 0%; /* Start at 0 and update dynamically */
+  transition: width 0.5s ease-in-out;
+}
+
+
+.progress-text {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #c9d1d9;
+}
+
+/* Crypto Section */
+.crypto-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.crypto-box {
+  background: #21262d;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 45%;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #161b22;
+  padding: 8px 10px; /* Adjusted padding for better alignment */
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.address-container span {
+  font-size: 0.8rem;
+  overflow-wrap: anywhere; /* Ensures the address wraps properly if it's too long */
+}
+
+.address-container button {
+  background: #238636;
+  border: none;
+  padding: 5px 10px; /* Adjusted padding for better proportion */
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.8rem; /* Match button font size with the text */
+}
+
+.address-container button:hover {
+  background: #2ea043;
+}
+
+/* Reviews Section */
+.reviews-section {
+  margin-bottom: 15px;
+}
+
+.reviews-section h2 {
+  font-size: 1.2rem;
+  color: #58a6ff;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review {
+  background: #21262d;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #8b949e;
+}
