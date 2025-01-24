@@ -156,3 +156,103 @@ body {
   font-size: 0.8rem;
   color: #8b949e;
 }
+/* Info Button */
+.info-button {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background-color: #58a6ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.info-button:hover {
+  background-color: #4b8cc1;
+}
+
+/* Popup Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #21262d;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  color: #f0f0f0;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #f00;
+  cursor: pointer;
+}
+
+.popup p {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Crypto Boxes Styling */
+.crypto-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;  /* Space between the boxes */
+}
+
+.crypto-box {
+  background-color: #21262d;
+  padding: 15px;
+  border-radius: 8px;
+  width: 22%;  /* Smaller size to fit in one screen */
+  box-sizing: border-box;
+}
+
+.address-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: #238636;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  max-width: 100px;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+/* Removes Copy Button in Popup */
+.popup-content button {
+  display: none;
+}
