@@ -13,6 +13,26 @@ document.addEventListener("DOMContentLoaded", () => {
   // Update the progress text
   const progressText = document.querySelector(".progress-text");
   progressText.textContent = `$${currentDonation.toLocaleString()} / $${donationGoal.toLocaleString()}`;
+  
+  // Show the popup when the info button is clicked
+  const infoButton = document.querySelector(".info-button");
+  const popup = document.querySelector(".popup");
+  const closeBtn = document.querySelector(".close-btn");
+
+  infoButton.addEventListener("click", () => {
+    popup.style.display = "flex";
+  });
+
+  // Close the popup by clicking the close button or outside the popup
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  });
 });
 
 // Function to copy the crypto address
