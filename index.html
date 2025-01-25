@@ -14,68 +14,95 @@
       <p>Your support helps me create amazing content. Thank you! 🚀</p>
     </header>
 
-    <!-- Content Wrapper -->
+    <!-- Content Wrapper (Flex Layout) -->
     <div class="content-wrapper">
-      <!-- Trump Video -->
-      <div class="video-section">
-        <video controls class="trump-video">
-          <source src="get-trumped (2).mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <div class="top-section">
+        <!-- Trump Video -->
+        <div class="video-section">
+          <video controls class="trump-video">
+            <source src="get-trumped (2).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
-      <!-- Donation Goal -->
-      <div class="goal-section">
-        <h2>Donation Goal</h2>
-        <div class="progress-container">
-          <div class="progress-bar">
-            <div class="progress" style="width: 2.64%"></div>
-          </div>
-          <p class="progress-text">$2,830 / $10,000</p>
-        </div>
-      </div>
-
-      <!-- Crypto Addresses -->
-      <div class="crypto-section">
-        <div class="crypto-box">
-          <p><strong>Bitcoin (BTC)</strong></p>
-          <div class="address-container">
-            <span id="btc-address">bc1qwcxvz5azhfkjnj6tppgal28lhkclyyv4kf2rw2</span>
-            <button onclick="copyAddress('btc-address')">Copy</button>
-          </div>
-        </div>
-        <div class="crypto-box">
-          <p><strong>Ethereum (ETH)</strong></p>
-          <div class="address-container">
-            <span id="eth-address">0x86682c74486338e281BDA12CE877176df953D779</span>
-            <button onclick="copyAddress('eth-address')">Copy</button>
-          </div>
-        </div>
-        <div class="crypto-box">
-          <p><strong>Litecoin (LTC)</strong></p>
-          <div class="address-container">
-            <span id="ltc-address">LQgaU5QPq1pJuMnZvi9fFx1bdYFbMR5K8f</span>
-            <button onclick="copyAddress('ltc-address')">Copy</button>
-          </div>
-        </div>
-        <div class="crypto-box">
-          <p><strong>Solana (SOL)</strong></p>
-          <div class="address-container">
-            <span id="sol-address">3aoQJMJvHipt7W1PEn72EjnFQWdp1Ugy8zja3rDrosTT</span>
-            <button onclick="copyAddress('sol-address')">Copy</button>
+        <!-- Donation Goal -->
+        <div class="goal-section">
+          <h2>Donation Goal</h2>
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress" style="width: 2.64%"></div>
+            </div>
+            <p class="progress-text">$2,830 / $10,000</p>
           </div>
         </div>
       </div>
 
-      <!-- Reviews -->
-      <div class="reviews-section">
-        <h2>What People Say</h2>
-        <div class="reviews-container">
-          <div class="review">
-            <p>"⭐Zeetiva helped me alot, and I’m happy to I can pay them back now!"</p>
+      <!-- Crypto Addresses and Reviews in a Scrollable Container -->
+      <div class="scrollable-container">
+        <!-- Crypto Addresses -->
+        <div class="crypto-section">
+          <div class="crypto-box">
+            <p><strong>Bitcoin (BTC)</strong></p>
+            <div class="address-container">
+              <span id="btc-address">bc1qwcxvz5azhfkjnj6tppgal28lhkclyyv4kf2rw2</span>
+              <button onclick="copyAddress('btc-address')">Copy</button>
+            </div>
           </div>
-          <div class="review">
-            <p>"⭐I loved zeetiva! She was both insightful and entertaining."</p>
+          <div class="crypto-box">
+            <p><strong>Ethereum (ETH)</strong></p>
+            <div class="address-container">
+              <span id="eth-address">0x86682c74486338e281BDA12CE877176df953D779</span>
+              <button onclick="copyAddress('eth-address')">Copy</button>
+            </div>
+          </div>
+          <div class="crypto-box">
+            <p><strong>Litecoin (LTC)</strong></p>
+            <div class="address-container">
+              <span id="ltc-address">LQgaU5QPq1pJuMnZvi9fFx1bdYFbMR5K8f</span>
+              <button onclick="copyAddress('ltc-address')">Copy</button>
+            </div>
+          </div>
+          <div class="crypto-box">
+            <p><strong>Solana (SOL)</strong></p>
+            <div class="address-container">
+              <span id="sol-address">3aoQJMJvHipt7W1PEn72EjnFQWdp1Ugy8zja3rDrosTT</span>
+              <button onclick="copyAddress('sol-address')">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="reviews-section">
+          <h2>What People Say</h2>
+          <div class="reviews-container">
+            <div class="review">
+              <p>"⭐Zeetiva helped me alot, and I’m happy to I can pay them back now!"</p>
+            </div>
+            <div class="review">
+              <p>"⭐I loved zeetiva! She was both insightful and entertaining."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leaderboard Section (Always visible) -->
+      <div class="leaderboard-section">
+        <h2>Top Donors</h2>
+        <div class="leaderboard-container">
+          <div class="leaderboard-item">
+            <p><strong>1. user</strong> - $?</p>
+          </div>
+          <div class="leaderboard-item">
+            <p><strong>2. user</strong> - $?</p>
+          </div>
+          <div class="leaderboard-item">
+            <p><strong>3. user</strong> - $?</p>
+          </div>
+          <div class="leaderboard-item">
+            <p><strong>4. user</strong> - $?</p>
+          </div>
+          <div class="leaderboard-item">
+            <p><strong>5. user</strong> - $?</p>
           </div>
         </div>
       </div>
