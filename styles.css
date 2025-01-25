@@ -8,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
 }
 
 .main-container {
@@ -18,6 +19,8 @@ body {
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+  overflow-y: auto; /* Allow scrolling inside the container if needed */
+  max-height: 90vh; /* Limit the height of the container */
 }
 
 /* Header Styles */
@@ -75,7 +78,6 @@ body {
   width: 0%; /* Start at 0 and update dynamically */
   transition: width 0.5s ease-in-out;
 }
-
 
 .progress-text {
   margin-top: 5px;
@@ -156,6 +158,7 @@ body {
   font-size: 0.8rem;
   color: #8b949e;
 }
+
 /* Info Button */
 .info-button {
   position: fixed;
@@ -255,4 +258,80 @@ button:hover {
 /* Removes Copy Button in Popup */
 .popup-content button {
   display: none;
+}
+
+/* Leaderboard Section */
+.leaderboard-section {
+  margin-bottom: 20px;
+}
+
+.leaderboard-section h2 {
+  font-size: 1.5rem;
+  color: #58a6ff;
+}
+
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 60vh; /* Limit height for the leaderboard */
+  overflow-y: auto; /* Allow scrolling inside the leaderboard if it exceeds the height */
+}
+
+.leaderboard-item {
+  background: #21262d;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #2e3b47; /* Darker background for the scrollbar track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #58a6ff; /* Custom blue color for the scrollbar thumb */
+  border-radius: 10px;
+  border: 3px solid #1e2a34; /* Optional: adds a border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4c94d1; /* Lighter blue on hover */
+}
+
+/* Apply custom scrollbar to the main container */
+.main-container {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(20, 20, 20, 0.95);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Apply custom scrollbar to the leaderboard container */
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 60vh; /* Limit height for the leaderboard */
+  overflow-y: auto;
+}
+
+/* Apply custom scrollbar to reviews container */
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 60vh;
+  overflow-y: auto;
 }
