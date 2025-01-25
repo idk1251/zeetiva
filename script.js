@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Update the progress text
   const progressText = document.querySelector(".progress-text");
   progressText.textContent = `$${currentDonation.toLocaleString()} / $${donationGoal.toLocaleString()}`;
-  
+
   // Show the popup when the info button is clicked
   const infoButton = document.querySelector(".info-button");
   const popup = document.querySelector(".popup");
