@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Donation data
-  const currentDonation = 2830; // Current amount in dollars
+  const currentDonation = 5282; // Current amount in dollars
   const donationGoal = 10000; // Goal amount in dollars
 
   // Calculate the progress percentage
